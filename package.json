@@ -1,9 +1,12 @@
 {
+  "homepage": "http://hugogallo15.hithub.io/next-13-todo-list-tutorial",
   "name": "todo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -24,6 +27,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "prisma": "^5.2.0"
   }
 }
